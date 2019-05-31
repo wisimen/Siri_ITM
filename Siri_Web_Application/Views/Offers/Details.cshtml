@@ -1,0 +1,67 @@
+﻿@model Siri_Web_Application.Models.Offer
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Offer</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Product.ProductImage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Product.ProductImage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OfferDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OfferDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OfferValue)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OfferValue)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Favored)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Favored)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Confirmed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Confirmed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BidderId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BidderId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.OfferId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

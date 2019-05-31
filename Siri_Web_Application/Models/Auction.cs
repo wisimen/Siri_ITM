@@ -37,7 +37,7 @@ namespace Siri_Web_Application.Models
 
         [Display(Name = "Vendedor")]
         [Required(ErrorMessage = "Campo obligatorio")]
-        public string SellerId { get; set; }
+        public int SellerId { get; set; }
 
         [ForeignKey("SellerId")]
         public Person Seller { get; set; }
